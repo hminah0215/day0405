@@ -89,3 +89,78 @@ java.nio.file.InvalidPathException: Illegal char <:> at index 48: C:\Users\seodo
 	at org.eclipse.egit.ui.internal.repository.tree.command.SubmoduleAddCommand$1.runInWorkspace(SubmoduleAddCommand.java:66)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:45.278
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:45.279
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@106c73ed[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:45.281
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:45.327
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.557
+!MESSAGE Boot LS startup time from start to initialized: 3258ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.668
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JmfNUVLiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.716
+!MESSAGE subscribing to classpath changes: sts4.classpath.JmfNUVLi isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.724
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.731
+!MESSAGE subsribers = {sts4.classpath.JmfNUVLi=Send Classpath Notifications(260)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.732
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.734
+!MESSAGE project demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.735
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.736
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.737
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JmfNUVLi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.738
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.751
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.758
+!MESSAGE buffering callback sts4.classpath.JmfNUVLi demo false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.759
+!MESSAGE executing callback sts4.classpath.JmfNUVLi 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:23:48.797
+!MESSAGE executing callback sts4.classpath.JmfNUVLi SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.564
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.565
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.574
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.580
+!MESSAGE buffering callback sts4.classpath.JmfNUVLi demo false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.581
+!MESSAGE executing callback sts4.classpath.JmfNUVLi 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-05 16:24:13.606
+!MESSAGE executing callback sts4.classpath.JmfNUVLi SUCCESS [done]
