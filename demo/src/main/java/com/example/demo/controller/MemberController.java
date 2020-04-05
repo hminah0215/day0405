@@ -49,6 +49,9 @@ public class MemberController {
 	public ModelAndView insert(MemberVo m) {
 		ModelAndView mav = new ModelAndView();
 		int re = dao.insert(m);
+		if(re > 0) {
+			mav.setViewName("redirect:/login.do");
+		}
 		return mav;
 	}
 	@RequestMapping(value = "/insertMember.do", method = RequestMethod.GET)

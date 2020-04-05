@@ -10,6 +10,7 @@
 <body>
 <c:if test="${login.id eq null}">
 <a href="/login.do">로그인</a><br>
+<a href="insertMember.do">회원가입</a><br>
 <a href="/listDept.do">부서목록</a>
 </c:if>
 <c:if test="${login.id ne null}">

@@ -33,7 +33,7 @@ public class MemberManager {
 	public static int insert(MemberVo m) {
 		int re = -1;
 		SqlSession session = factory.openSession();
-		re = session.insert("member.inset", m);
+		re = session.insert("member.insert", m);
 		session.commit();
 		session.close();
 		return re;

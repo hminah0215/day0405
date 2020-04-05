@@ -12,7 +12,7 @@
   </select>
   
   <insert id="insertEmp">
-  	insert into emp values(#{eno},#{ename},#{job},#{sal},#{hitrdate})
+  	insert into emp values(#{eno},#{ename},#{job},#{sal},#{hiredate})
   </insert>
   
   <update id="updateEmp">

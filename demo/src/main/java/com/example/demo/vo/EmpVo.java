@@ -1,6 +1,5 @@
 package com.example.demo.vo;
 
-import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,5 +12,5 @@ public class EmpVo {
 	private String ename;
 	private String job;
 	private int sal;
-	private Date hiredate;
+	private String hiredate;
 }

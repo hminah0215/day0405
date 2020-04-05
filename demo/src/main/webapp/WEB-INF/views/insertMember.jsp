@@ -9,7 +9,7 @@
 <body>
 		<h2>회원가입</h2>
 		<hr>
-		<form action="">
+		<form action="/insertMember.do" method="post">
 		아이디:<input type="text" name="id"><br>
 		비번:<input type="text" name="pwd"><br>
 		<input type="submit" value="등록">

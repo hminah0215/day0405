@@ -8,6 +8,6 @@
   </select>
   
   <insert id="insert">
-  	select * from member where id=#{id} and pwd=#{pwd}
+  	insert into member values(#{id},#{pwd})
   </insert>
 </mapper>
