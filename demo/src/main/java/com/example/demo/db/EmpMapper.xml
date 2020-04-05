@@ -7,6 +7,10 @@
     select * from emp
   </select>
   
+  <select id="detailEmp" resultType="empVo">
+    select * from emp where eno=#{eno}
+  </select>
+  
   <insert id="insertEmp">
   	insert into emp values(#{eno},#{ename},#{job},#{sal},#{hitrdate})
   </insert>
