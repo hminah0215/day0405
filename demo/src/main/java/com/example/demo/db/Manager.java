@@ -28,7 +28,4 @@ public class Manager {
 		session.close();
 		return list;
 	}
-	
-
-	
 }
