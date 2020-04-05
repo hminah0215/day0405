@@ -25,7 +25,7 @@ public class MemberManager {
 	}
 	public static MemberVo login(HashMap map) {
 		SqlSession session = factory.openSession();
-		MemberVo mv = session.selectOne("memberVo.login",map);
+		MemberVo mv = session.selectOne("member.login",map);
 		session.close();
 		return mv;
 	}
