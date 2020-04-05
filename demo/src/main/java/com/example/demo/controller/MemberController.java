@@ -22,7 +22,7 @@ public class MemberController {
 
 
 
-	@RequestMapping()
+	@RequestMapping("/login.do")
 	public ModelAndView login(String id, String pwd) {
 		ModelAndView mav = new ModelAndView();
 		HashMap hm = new HashMap();
