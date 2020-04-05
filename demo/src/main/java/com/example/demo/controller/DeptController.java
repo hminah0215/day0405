@@ -11,7 +11,7 @@ import com.example.demo.dao.DeptDao;
 import com.example.demo.vo.DeptVo;
 
 @Controller
-public class DpetController {
+public class DeptController {
 	
 	@Autowired
 	private DeptDao dao;
@@ -24,7 +24,7 @@ public class DpetController {
 	public ModelAndView listDept() {
 		ModelAndView mav = new ModelAndView();
 		List<DeptVo> list = dao.listDept();
-		mav.addObject(list);
+		mav.addObject("list",list);
 		return mav;
 	}
 }
