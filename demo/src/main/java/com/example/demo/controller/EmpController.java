@@ -3,15 +3,15 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.EmpDao;
 import com.example.demo.vo.EmpVo;
 
-@RestController
+@Controller
 public class EmpController {
 	
 	@Autowired
@@ -21,7 +21,7 @@ public class EmpController {
 		this.dao = dao;
 	}
 	
-	@RequestMapping("listEmp.do")
+	@RequestMapping("/listEmp.do")
 	public ModelAndView listEmp(){
 		ModelAndView mav = new ModelAndView();
 		List<EmpVo> list = dao.listEmp();
@@ -37,6 +37,9 @@ public class EmpController {
 	public ModelAndView insertEmp(EmpVo ev) {
 		ModelAndView mav = new ModelAndView();
 		int re = dao.insertEmp(ev);
+		if(re>0) {
+			mav.setViewName("redirect:/listEmp.do");
+		}
 		return mav;
 	}
 	
@@ -44,7 +47,7 @@ public class EmpController {
 	public ModelAndView detailEmp(int eno) {
 		ModelAndView mav = new ModelAndView();
 		EmpVo ev = dao.detailEmp(eno);
-		mav.addObject("up", ev);
+		mav.addObject("e", ev);
 		return mav;
 	}
 	
