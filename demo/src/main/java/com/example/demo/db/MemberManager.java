@@ -30,4 +30,13 @@ public class MemberManager {
 		return mv;
 	}
 	
+	public static int insert(MemberVo m) {
+		int re = -1;
+		SqlSession session = factory.openSession();
+		re = session.insert("member.inset", m);
+		session.commit();
+		session.close();
+		return re;
+	}
+	
 }
