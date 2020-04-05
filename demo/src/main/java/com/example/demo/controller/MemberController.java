@@ -2,6 +2,8 @@ package com.example.demo.controller;
 
 import java.util.HashMap;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,14 +25,22 @@ public class MemberController {
 	public void loginForm() {
 		
 	}
+	@RequestMapping("/logout.do")
+	public ModelAndView logoutForm(HttpSession session) {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("redirect:/main");
+		session.removeAttribute("login");
+		return mav;
+	}
 
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public ModelAndView login(String id, String pwd) {
+	public ModelAndView login(String id, String pwd , HttpSession session) {
 		ModelAndView mav = new ModelAndView();
 		HashMap hm = new HashMap();
 		hm.put("id", id); 
 		hm.put("pwd", pwd);
-		dao.login(hm);
+		session.setAttribute("login", dao.login(hm));
+		mav.setViewName("redirect:/main");
 		return mav;
 	}
 }
