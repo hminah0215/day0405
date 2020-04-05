@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.MemberDao;
+import com.example.demo.vo.MemberVo;
 
 @Controller
 public class MemberController {
@@ -42,5 +43,16 @@ public class MemberController {
 		session.setAttribute("login", dao.login(hm));
 		mav.setViewName("redirect:/main");
 		return mav;
+	}
+	
+	@RequestMapping(value = "/insertMember.do", method = RequestMethod.POST)
+	public ModelAndView insert(MemberVo m) {
+		ModelAndView mav = new ModelAndView();
+		int re = dao.insert(m);
+		return mav;
+	}
+	@RequestMapping(value = "/insertMember.do", method = RequestMethod.GET)
+	public void insert() {
+	
 	}
 }

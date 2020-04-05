@@ -13,4 +13,7 @@ public class MemberDao {
 		public MemberVo login(HashMap map) {
 			return MemberManager.login(map);
 		}
+		public int insert(MemberVo m) {
+			return MemberManager.insert(m);
+		}
 }

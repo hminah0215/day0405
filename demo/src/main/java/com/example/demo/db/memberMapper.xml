@@ -6,4 +6,8 @@
   <select id="login" resultType="memberVo">
     select * from member where id = #{id} and pwd =#{pwd}
   </select>
+  
+  <insert id="insert">
+  	select * from member where id=#{id} and pwd=#{pwd}
+  </insert>
 </mapper>
