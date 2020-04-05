@@ -10,7 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import com.example.demo.vo.DeptVo;
 
-public class Manager {
+public class DeptManager {
 	private static SqlSessionFactory factory;
 	static {
 		try {
