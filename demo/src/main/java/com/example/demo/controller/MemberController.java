@@ -26,7 +26,7 @@ public class MemberController {
 	public ModelAndView login(String id, String pwd) {
 		ModelAndView mav = new ModelAndView();
 		HashMap hm = new HashMap();
-		hm.put("id", id);
+		hm.put("id", id); 
 		hm.put("pwd", pwd);
 		dao.login(hm);
 		return mav;
