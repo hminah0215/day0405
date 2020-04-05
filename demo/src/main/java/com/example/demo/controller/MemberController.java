@@ -11,7 +11,7 @@ import com.example.demo.dao.MemberDao;
 
 @Controller
 public class MemberController {
-	@Autowired
+	@Autowired 
 	private MemberDao dao;
 	
 	
