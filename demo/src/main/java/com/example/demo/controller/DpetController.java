@@ -24,7 +24,7 @@ public class DpetController {
 	public ModelAndView listDept() {
 		ModelAndView mav = new ModelAndView();
 		List<DeptVo> list = dao.listDept();
-		mav.addObject(list);
+		mav.addObject("list",list);
 		return mav;
 	}
 }
