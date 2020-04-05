@@ -13,14 +13,10 @@ import com.example.demo.dao.MemberDao;
 public class MemberController {
 	@Autowired 
 	private MemberDao dao;
-	
-	
-	
+
 	public void setDao(MemberDao dao) {
 		this.dao = dao;
 	}
-
-
 
 	@RequestMapping()
 	public ModelAndView login(String id, String pwd) {
