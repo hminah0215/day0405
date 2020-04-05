@@ -16,6 +16,7 @@
 <c:if test="${login.id ne null}">
 <a href="/logout.do">로그아웃</a><br>
 <a href="/listDept.do">부서목록</a>
+<a href="/listEmp.do">사원목록</a>
 <a></a>
 </c:if>
 </body>
