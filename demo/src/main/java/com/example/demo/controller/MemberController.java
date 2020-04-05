@@ -5,6 +5,7 @@ import java.util.HashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.MemberDao;
@@ -18,7 +19,12 @@ public class MemberController {
 		this.dao = dao;
 	}
 
-	@RequestMapping()
+	@RequestMapping(value = "/login.do",method = RequestMethod.GET)
+	public void loginForm() {
+		
+	}
+
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
 	public ModelAndView login(String id, String pwd) {
 		ModelAndView mav = new ModelAndView();
 		HashMap hm = new HashMap();
